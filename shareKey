@@ -6,7 +6,7 @@ if [ "$1" == "--help" ];then
     \n====== SINTAXE ====== \n
     \n-->    shareKey USUÁRIO IP PORTA\n
     \n====== EXEMPLO ====== \n
-    \n-->    shareKey 10.83.0.69 276\n"
+    \n-->    shareKey root 10.83.0.69 276\n"
 else
     echo -e "\nSerão usados os seguintes dados:\nUsuário:   $1 \nIP:        $2\nPorta:     $3\n\nIniciando o compartilhamento da chave...\n"
     ssh-copy-id $1@$2 -p $3
